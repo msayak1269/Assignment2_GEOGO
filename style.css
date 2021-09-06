@@ -64,15 +64,7 @@ body{
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
   }
-  li{
-      list-style-type: none;
-      padding: 7px;
-      color: white;
-}
-ul{
-    border-bottom: 1px solid white;
-    padding-bottom: 18px;
-}
+
 .weatherDetails{
     color: white;
 }
@@ -97,4 +89,7 @@ ul{
 }
 .cloud-icon{
     padding: 22px;
+}
+hr{
+    border-top: 1px solid white;
 }
