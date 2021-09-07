@@ -18,67 +18,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row" id="mainRow">
-            <div class="col-8" id="weather1">
-                <div class="text-white bottom-left">
-                    <div class="row">
-                        <div class="col-3">
-                            <span id="temp">30&#8451;</span>
+    <div class="container-fluid">
+        <div class="card container-fluid">
+            <div class="row">
+                <div id="col8" class="col-md-8">
+                    <div class="info text-white">
+                        <div class="row">
+                            <div class="col-2">
+                                <h1> <span id="temp">30&#8451;</span></h1>
+                            </div>
+                            <div class="col-3">
+                                <h1 class="mt-2"
+                                style="margin-left: -32px;
+                                margin-bottom: -8px;"
+                                >Kolkata</h1>
+                                <small
+                                style="margin-top:-50px;
+                                margin-left: -32px;"
+                                >10:05-Saturday,4 Sep'21</small>
+                            </div>
+                            <div class="col-1">
+                                <i class="fa fa-cloud"
+                                style="margin-left: -170px;
+                                font-size: 45px;
+                                margin-top: 3px;"
+                                ></i>
+                                <br>
+                                <small
+                                style="margin-left: -165px;
+                                margin-top: -50px;"
+                                >Sunny</small>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <div class="row">
-                                <span id="location">Kolkata</span>
-                            </div>
-                            <div class="row">
-                                10:05-Saturday,4 Sep'21
-                            </div>
-                        </div>
-                        <div class="col-3 cloud-icon">
-                            <div class="row">
-                                <i class="fa fa-cloud" style="font-size:38px;"></i></i>
-                            </div>
-                            <div class="row">
-                                Sunny
-                            </div>
-                        </div>
-                    </div>
+                        
+                    </div> 
                 </div>
-            </div>
-            <div class="col-4" id="weather2">
-                <div class="row">
-                    <div class="col-9">
-                        <input type="text" placeholder="Another Location">
-                    </div>
-                    <div class="col-3" id="searchDiv">
-                        <img id="search" src="./image/search.png" alt="">
-                    </div>
-                </div>
-                <div class="text-white">
-                    <!-- <ul>
+                <div id="col4" class="col-md-4">
+                    <input  id="searchInput"type="text" placeholder="Another Location">
+                    <button id="searchbtn" class="btn btn-warning"><i class="fa fa-search" style="font-size:20px;"></i></button>
+                    <br><br>
+                    <ul class="text-white">
                         <li>Mumbai</li>
-                        <li>New Delhi</li>
-                        <li>Banglore</li>
+                        <br>
+                        <li>Delhi</li>
+                        <br>
                         <li>Hydrabad</li>
-                    </ul> -->
-                    <p>Mumbai</p>
-                    <p>New Delhi</p>
-                    <p> Banglore</p>
-                    <p>Hydrabad</p>
-                </div>
-                <hr>
-                <div class="weatherDetails">
-                    <h5>Weather Details</h5>
-                    <br>
+                        <br>
+                        <li>Panskura</li>
+                    </ul>
+                    <hr>
+                    <div class="details text-white">
+                        <h6>Weather Details</h6>
+                        <br>
                     <span class="left">Cloudy</span><span class="right">86%</span>
                     <br><br>
                     <span class="left">Humidity</span><span class="right">62%</span>
                     <br><br>
                     <span class="left">Wind</span><span class="right">8km/h</span>
+                    <br>
+                    <hr>
+                    </div>
                 </div>
-                <br>
-                <br>
-                <hr>
             </div>
         </div>
     </div>

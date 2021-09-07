@@ -2,72 +2,71 @@ body{
     background-image:url("./image/background.jpg");
     background-size: cover;
     background-attachment: fixed;
+    /* filter: blur(5px);
+    -webkit-filter: blur(8px); */
 }
-#mainRow{
+.card{
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 75%;
+    height: 75%;
+    background-color: transparent;
 }
-.card-body{
-    padding: 0px;
-}
-#weather1{
-    height: 500px;
-    width: 750px;
-    background-image:url("./image/weather1.jpg");
+#col8{
+    background-image: url("./image/weather1.jpg"); 
+    height: 75vh;
     background-size: cover;
-    /* filter: blur(1px);
-    -webkit-filter: blur(1px); */
+    width: auto;
+     
 }
-#weather2{
-    height: 500px;
-    width: 1050px;
-    background-image:url("./image/weather2.jpg");
+#col4{
+    background-image: url("./image/weather2.jpg");
     background-size: cover;
-    
 }
-.col-4,.col-8{
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    
+#searchbtn{
+    border-radius: 0%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
 }
-#searchDiv{
-    background-color: yellow;
-    height: 75px;
-    padding: 0;
-    margin: 0;
+#searchInput{
+    width: 83%;
+    margin-top: 33px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
 }
-.col-9{
-    padding-top: 45px;
-    padding-right: 70px;
-}
-#search{
-    height: 20px;
-    width: 20px;
-    margin-top: 25px;
-    margin-left: 32px;
-}
-.col-9 input[type="text"]
-{
-    background:rgba(0,0,0,0);
-    border: none;
-    border-bottom:1px solid #fff;
-}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1; 
-    padding: 10px;/* Firefox */
-    font-size: small;
   }  
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
   }
 
-.weatherDetails{
-    color: white;
+  #searchInput:focus {
+    outline: none;
 }
+
+ul{
+    list-style-type: none;
+}
+li{
+    margin-left: -36px;
+}
+hr{
+    border-top: 1px solid white;
+}
+
 .right{
     float:right;
 }
@@ -75,21 +74,14 @@ body{
 .left{
     float:left;
 }
+.info{
+    /* margin-top: 400px; */
+    position: fixed;
+    bottom: 75px;
+    left: 50px;
+    width: 100%;
+}
 #temp{
     font-size: 70px;
-    font-weight:600;
 }
-#location{
-    font-size: 40px;
-    font-weight: 400;
-}
-.bottom-left {
-    margin-top: 350px;
-    left: 36px;
-}
-.cloud-icon{
-    padding: 22px;
-}
-hr{
-    border-top: 1px solid white;
-}
+
